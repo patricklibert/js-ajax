@@ -1,0 +1,107 @@
+@import 'colors';
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: $main-color;
+  background-color: $main-backgroundcolor;
+}
+
+#wrapper {
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  vertical-align: center;
+
+  height: 118px;
+}
+
+#header {
+  display: flex;
+  width: 960px;
+  margin: 0 auto;
+  font-size: 25px;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+#figcaption {
+  display: flex;
+  width: 280px;
+  height: 258px;
+  padding: 20px;
+  overflow: hidden;
+  color: $fig-color;
+  background-color: $fig-backgroundcolor;
+  line-height: 1.6em;
+  font-size: 18px;
+
+
+}
+
+#page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  height: 70vh;
+}
+
+#imagequote {
+  width: auto;
+  height: 298px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-top: 2px;
+
+}
+
+#buttonquote {
+  background-color: #282828;
+  border: 0;
+  width: 120px;
+  height: 31px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom: 10px;
+  color: #909090;
+  outline:none;
+
+}
+
+.loader {
+  position: absolute;
+  left: 45%;
+  top: 40%;
+  border: 16px solid #DEDEDE;
+  border-radius: 50%;
+  border-top: 16px solid #232323;
+  width: 120px;
+  height: 120px;
+  text-align:  center;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+#quoteoftheday {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+}
